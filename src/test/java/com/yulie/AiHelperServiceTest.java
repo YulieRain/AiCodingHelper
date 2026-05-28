@@ -26,7 +26,7 @@ public class AiHelperServiceTest {
         System.out.println(message);
     }
 
-
+    // 结构化输出respon回复
     @Test
     void chatReportReport(){
         String usremessage = "你好，给我几条学习建议";
