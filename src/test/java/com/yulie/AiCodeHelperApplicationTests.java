@@ -33,4 +33,7 @@ class AiCodeHelperApplicationTests {
     void chatAddSystemMessage() {
         aiCodeHelper.chatAddSystemMessage("你好");
     }
+
+
+
 }

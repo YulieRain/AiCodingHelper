@@ -20,7 +20,17 @@ public class AiHelperServiceTest {
 
     @Test
     void chat() {
-        String message = aiHelperService.chat("你好");
+        String message = aiHelperService.chat("你好,我是yulie");
         System.out.println(message);
+        message = aiHelperService.chat("你好,我是谁？");
+        System.out.println(message);
+    }
+
+
+    @Test
+    void chatReportReport(){
+        String usremessage = "你好，给我几条学习建议";
+        AiHelperService.Report chatwithReport = aiHelperService.chatwithReport(usremessage);
+        System.out.println(chatwithReport);
     }
 }
