@@ -1,6 +1,7 @@
 package com.yulie.ai;
 
 
+import dev.langchain4j.service.Result;
 import dev.langchain4j.service.SystemMessage;
 
 import java.util.List;
@@ -16,4 +17,7 @@ public interface AiHelperService {
 
     // 定义大模型返回值json
     record Report(String name, List<String> items){}
+
+    @SystemMessage(fromResource = "System_Prompt.txt")
+    Result<String> chatwithRag(String message);
 }

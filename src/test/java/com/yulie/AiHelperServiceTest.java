@@ -2,6 +2,7 @@ package com.yulie;
 
 
 import com.yulie.ai.AiHelperService;
+import dev.langchain4j.service.Result;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,5 +33,13 @@ public class AiHelperServiceTest {
         String usremessage = "你好，给我几条学习建议";
         AiHelperService.Report chatwithReport = aiHelperService.chatwithReport(usremessage);
         System.out.println(chatwithReport);
+    }
+
+    @Test
+    void chatwithRag() {
+        String usermeassage = "请给我学习编程的方法";
+        Result<String> stringResult = aiHelperService.chatwithRag(usermeassage);
+        System.out.println(stringResult.content());
+        System.out.println(stringResult.sources());
     }
 }
