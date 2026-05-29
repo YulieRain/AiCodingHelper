@@ -59,7 +59,7 @@ public class AiHelperServiceTest {
 
     @Test
     void chatwithGuardrail(){
-        String chat = aiHelperService.chat("kill");
+        String chat = aiHelperService.chat("你好");
         System.out.println(chat);
     }
 }
