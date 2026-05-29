@@ -1,11 +1,15 @@
 package com.yulie.ai;
 
 
+import com.yulie.ai.guardrail.SafeInputGuardrail;
 import dev.langchain4j.service.Result;
 import dev.langchain4j.service.SystemMessage;
+import dev.langchain4j.service.guardrail.InputGuardrails;
 
 import java.util.List;
 
+
+@InputGuardrails( { SafeInputGuardrail.class} )
 public interface AiHelperService {
 
     @SystemMessage(fromResource = "System_Prompt.txt") // 添加系统预设

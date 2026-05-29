@@ -42,4 +42,24 @@ public class AiHelperServiceTest {
         System.out.println(stringResult.content());
         System.out.println(stringResult.sources());
     }
+
+
+    @Test
+    void chatwithTools(){
+        String chat = aiHelperService.chat("有哪些常见的计算机网络面试题");
+        System.out.println(chat);
+    }
+
+
+    @Test
+    void chatwithMcp(){
+        String chat = aiHelperService.chat("原神的官网是什么");
+        System.out.println(chat);
+    }
+
+    @Test
+    void chatwithGuardrail(){
+        String chat = aiHelperService.chat("kill");
+        System.out.println(chat);
+    }
 }
