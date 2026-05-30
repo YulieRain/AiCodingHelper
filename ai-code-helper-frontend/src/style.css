@@ -1,0 +1,77 @@
+:root {
+  --bg-primary: rgba(20, 12, 36, 0.75);
+  --bg-glass: rgba(28, 16, 48, 0.82);
+  --bg-subtle: rgba(40, 20, 60, 0.7);
+  --bg-muted: rgba(45, 22, 68, 0.75);
+  --border-color: rgba(255, 150, 200, 0.15);
+  --border-strong: rgba(255, 180, 220, 0.25);
+  --text-primary: #fff0f8;
+  --text-secondary: #e0c4f0;
+  --text-muted: #a88cc0;
+  --accent-pink: #ff8ec4;
+  --accent-purple: #d48aff;
+  --accent-blue: #8aa4ff;
+  --accent-soft: rgba(255, 142, 196, 0.18);
+  --bubble-user: rgba(244, 114, 182, 0.2);
+  --bubble-user-border: rgba(244, 114, 182, 0.35);
+  --bubble-assistant: rgba(255, 255, 255, 0.08);
+  --code-inline-bg: rgba(212, 138, 255, 0.18);
+  --code-block-bg: #150c25;
+  --shadow-sm: 0 2px 16px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 25px rgba(244, 114, 182, 0.25);
+  --glass-blur: blur(22px);
+  --content-max-width: 720px;
+  --header-height: 56px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
+    sans-serif;
+  background: #0c0a12;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 132, 252, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 132, 252, 0.4);
+}
+
+button {
+  font-family: inherit;
+}
